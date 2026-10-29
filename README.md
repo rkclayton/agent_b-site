@@ -24,3 +24,5 @@ npx wrangler pages deploy public --project-name agentb-app --branch main
 ```
 
 The project already owns the `agentb.app` custom domain.
+
+Cloudflare Web Analytics is already enabled on the Pages project. The response CSP permits its automatically injected script and same-origin performance beacon; no other third-party script is allowed.

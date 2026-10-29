@@ -15,7 +15,7 @@ This repository is the public, forward-facing website for Agent_b. Production is
 - Match the application, not a generic SaaS template. Use `../AgentB/web/DESIGN.md` and `../AgentB/web/css/tokens.css` as the visual source: IBM Plex Sans/Mono, recessed dark wells, precise hairlines, restrained green/amber/red state color, and no decorative gradients or card grid.
 - Approved source assets are `../AgentB/web/assets/mark.svg`, `etching.png`, the IBM Plex font files and licenses, plus `../AgentB/docs/images/chat.png`. Copy needed files into this repository and preserve attribution; deployed builds must not depend on sibling paths.
 - Keep copy terse and factual. Never invent compatibility, security, privacy, pricing, roadmap, or availability claims.
-- Keep secrets and environment-specific values out of source. Add analytics, cookies, forms, or third-party scripts only when explicitly requested and document their privacy impact.
+- Keep secrets and environment-specific values out of source. The existing Pages project injects Cloudflare Web Analytics; CSP permits only its SRI-protected script and same-origin beacon. Add no other analytics, cookies, forms, or third-party scripts unless explicitly requested and document their privacy impact.
 - Use root-relative internal links and HTTPS for external links. Provide useful alt text and visible keyboard focus.
 
 ## Delivery

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1014">
+  <meta name="description" content="Agent_b is a Windows-first coding agent for OpenAI-compatible models, with durable work, governed tools, and an optional low-privilege service identity.">
+  <meta property="og:title" content="Agent_b — the machine, thinking">
+  <meta property="og:description" content="A Windows-first coding agent with governed tools, durable work, and a quiet instrument-panel interface.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://agentb.app/">
+  <meta property="og:image" content="https://agentb.app/assets/chat.png">
+  <title>Agent_b — the machine, thinking</title>
+  <link rel="icon" href="/assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="etch" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Agent_b home">
+      <img src="/assets/mark.svg" alt="" width="28" height="28">
+      <span>Agent_b</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#inside">Inside</a>
+      <a href="#boundary">Boundary</a>
+      <a href="https://github.com/rkclayton/agent_b">Source</a>
+    </nav>
+    <a class="header-download" href="https://github.com/rkclayton/agent_b/releases/latest/download/Agent_b-setup.exe">Download</a>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="status"><span class="lamp" aria-hidden="true"></span> Windows-first coding agent</p>
+        <h1 id="hero-title">Watch the machine<br><span>think.</span></h1>
+        <p class="lede">One local process for serious work: durable chats and plans, governed tools, context accounting, and your choice of OpenAI-compatible model.</p>
+        <div class="actions">
+          <a class="primary" href="https://github.com/rkclayton/agent_b/releases/latest/download/Agent_b-setup.exe">Download for Windows <span aria-hidden="true">↓</span></a>
+          <a class="secondary" href="https://github.com/rkclayton/agent_b">Read the source</a>
+        </div>
+        <p class="fine">Per-user install · Apache-2.0 · no console window</p>
+      </div>
+
+      <div class="instrument" aria-label="Illustration of Agent_b processing a coding task">
+        <div class="instrument-top">
+          <span class="instrument-brand"><img src="/assets/agent.svg" alt="" width="18" height="18"> agent_b</span>
+          <span class="live"><i></i> running</span>
+        </div>
+        <div class="trace" aria-hidden="true"><span></span></div>
+        <div class="instrument-body">
+          <div class="readout wide">
+            <div class="readout-head"><span>Activity</span><b>live</b></div>
+            <ol class="activity">
+              <li class="done"><i></i><span>Read repository</span><time>0.8s</time></li>
+              <li class="done"><i></i><span>Inspect dependencies</span><time>1.2s</time></li>
+              <li class="active"><i></i><span>Apply change</span><time>now</time></li>
+              <li><i></i><span>Run verification</span><time>—</time></li>
+            </ol>
+          </div>
+          <div class="readout tools">
+            <div class="readout-head"><span>Tools</span><b>3</b></div>
+            <dl><div><dt>read_file</dt><dd>12</dd></div><div><dt>search</dt><dd>8</dd></div><div class="tool-live"><dt>apply_patch</dt><dd>1</dd></div></dl>
+          </div>
+          <div class="readout context">
+            <div class="readout-head"><span>Context</span><b>54.7%</b></div>
+            <div class="meter"><span></span><i></i></div>
+            <p><span>22,418</span><span>40,960 ceiling</span></p>
+          </div>
+        </div>
+        <div class="instrument-foot"><span>repository bound</span><span class="mono">idle → read → write → verify</span></div>
+      </div>
+    </section>
+
+    <section class="statement" aria-label="Product summary">
+      <p>Not a chat window with a terminal bolted on.</p>
+      <h2>An instrument for watching a machine think—and deciding exactly what it may do.</h2>
+    </section>
+
+    <section class="inside" id="inside" aria-labelledby="inside-title">
+      <div class="section-heading">
+        <span class="section-index">01 / inside</span>
+        <h2 id="inside-title">The work stays legible.</h2>
+      </div>
+      <div class="feature-lines">
+        <article>
+          <span class="feature-number">01</span>
+          <div><h3>Durable by default</h3><p>Chats, plans, files, and run history survive restarts. Return to the work instead of reconstructing it.</p></div>
+          <span class="state-word">retained</span>
+        </article>
+        <article>
+          <span class="feature-number">02</span>
+          <div><h3>Context you can see</h3><p>Token occupancy, compaction, tool activity, and run state are visible instruments—not hidden machinery.</p></div>
+          <span class="state-word">measured</span>
+        </article>
+        <article>
+          <span class="feature-number">03</span>
+          <div><h3>Your model endpoint</h3><p>Connect an OpenAI-compatible endpoint or install a pinned local llama.cpp model during setup.</p></div>
+          <span class="state-word">connected</span>
+        </article>
+        <article>
+          <span class="feature-number">04</span>
+          <div><h3>One engine, app or CLI</h3><p>Run interactively in the desktop interface or invoke the same engine from a prompt in your current directory.</p></div>
+          <span class="state-word">ready</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="app-view" aria-labelledby="app-title">
+      <div class="app-copy">
+        <span class="section-index">02 / the surface</span>
+        <h2 id="app-title">Quiet until something moves.</h2>
+        <p>The interface borrows from oscilloscopes and mixing consoles: recessed wells, tabular numbers, and color reserved for live state. Activity is amber. A boundary crossed is red.</p>
+        <ul>
+          <li><span></span>Dense, readable run history</li>
+          <li><span></span>Plans and chats in one workspace</li>
+          <li><span></span>Keyboard-first controls</li>
+        </ul>
+      </div>
+      <figure>
+        <div class="screen-frame"><img src="/assets/chat.png" alt="Agent_b desktop interface showing a coding-agent conversation and composer" width="1250" height="975"></div>
+        <figcaption><span>Agent_b / desktop</span><span>actual application capture</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="boundary" id="boundary" aria-labelledby="boundary-title">
+      <div class="section-heading">
+        <span class="section-index">03 / boundary</span>
+        <h2 id="boundary-title">Authority is a visible decision.</h2>
+      </div>
+      <div class="boundary-grid">
+        <div class="boundary-copy">
+          <p>Agent_b can execute shell commands selected by a model. It treats that authority as the central design problem, not a footnote.</p>
+          <a href="https://github.com/rkclayton/agent_b/blob/main/SECURITY.md">Read the security model</a>
+        </div>
+        <div class="boundary-panel">
+          <div><span class="boundary-light green"></span><p><b>Governed tools</b><small>Calls, results, and decisions are journaled.</small></p></div>
+          <div><span class="boundary-light amber"></span><p><b>Explicit approvals</b><small>Risky actions stop at a visible decision.</small></p></div>
+          <div><span class="boundary-light red"></span><p><b>Optional identity split</b><small>Use a low-privilege Windows service identity for mutating tools.</small></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" aria-labelledby="download-title">
+      <img src="/assets/mark.svg" alt="" width="64" height="64">
+      <p class="status"><span class="lamp" aria-hidden="true"></span> Ready when you are</p>
+      <h2 id="download-title">Give the work a boundary.<br>Then let it run.</h2>
+      <div class="actions">
+        <a class="primary" href="https://github.com/rkclayton/agent_b/releases/latest/download/Agent_b-setup.exe">Download Agent_b <span aria-hidden="true">↓</span></a>
+        <a class="secondary" href="https://github.com/rkclayton/agent_b/releases">Release notes</a>
+      </div>
+      <p class="fine">Windows · compatible model endpoint required</p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="/"><img src="/assets/mark.svg" alt="" width="24" height="24"><span>Agent_b</span></a>
+    <p>One process. Visible state. Deliberate authority.</p>
+    <nav aria-label="Footer navigation"><a href="https://github.com/rkclayton/agent_b">GitHub</a><a href="https://github.com/rkclayton/agent_b/blob/main/LICENSE">License</a><a href="https://github.com/rkclayton/agent_b/blob/main/SECURITY.md">Security</a></nav>
+  </footer>
+</body>
+</html>

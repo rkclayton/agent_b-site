@@ -25,6 +25,7 @@
     </a>
     <nav aria-label="Primary navigation">
       <a href="#inside">Inside</a>
+      <a href="#system">System</a>
       <a href="#boundary">Boundary</a>
       <a href="https://github.com/rkclayton/agent_b">Source</a>
     </nav>
@@ -108,9 +109,58 @@
       </div>
     </section>
 
+    <section class="system-map" id="system" aria-labelledby="system-title">
+      <div class="system-intro">
+        <span class="section-index">02 / the system</span>
+        <h2 id="system-title">More than the next reply.</h2>
+        <p>Agent_b is built around the whole job: what the model sees, what it remembers, which tools it may use, and where the result lives.</p>
+        <div class="robot-stage" aria-hidden="true">
+          <span class="orbit orbit-one"></span>
+          <span class="orbit orbit-two"></span>
+          <span class="robot-wire wire-one"></span>
+          <span class="robot-wire wire-two"></span>
+          <span class="robot-wire wire-three"></span>
+          <img src="/assets/mark.svg" alt="" width="96" height="96">
+          <i class="node n1"></i><i class="node n2"></i><i class="node n3"></i>
+        </div>
+      </div>
+      <div class="system-lines">
+        <article>
+          <span class="system-code">plan.md</span>
+          <div><h3>Plans with a home</h3><p>Bind work to a repository, keep the plan beside the code, and return to it across sessions.</p></div>
+          <b>durable</b>
+        </article>
+        <article>
+          <span class="system-code">recall</span>
+          <div><h3>Layered memory</h3><p>Recall earlier chat, repository, environment, and user context without stuffing every fact into every turn.</p></div>
+          <b>scoped</b>
+        </article>
+        <article>
+          <span class="system-code">vision</span>
+          <div><h3>Files that stay useful</h3><p>Attach images and PDFs. When a model server refuses them, Agent_b sends readable text instead and tells you.</p></div>
+          <b>adaptive</b>
+        </article>
+        <article>
+          <span class="system-code">skills/</span>
+          <div><h3>Procedures on demand</h3><p>Enable compact, inspectable skills for research, debugging, review, test-first work, and your own repeatable processes.</p></div>
+          <b>inspectable</b>
+        </article>
+        <article>
+          <span class="system-code">schedule</span>
+          <div><h3>Work that can wait</h3><p>Schedule bounded runs and quiet watchers. A run with no available model connection refuses cleanly.</p></div>
+          <b>bounded</b>
+        </article>
+        <article>
+          <span class="system-code">phone</span>
+          <div><h3>Pair, verify, revoke</h3><p>Connect the phone app by QR code and matching fingerprints. The broker carries ciphertext it cannot read.</p></div>
+          <b>paired</b>
+        </article>
+      </div>
+    </section>
+
     <section class="app-view" aria-labelledby="app-title">
       <div class="app-copy">
-        <span class="section-index">02 / the surface</span>
+        <span class="section-index">03 / the surface</span>
         <h2 id="app-title">Quiet until something moves.</h2>
         <p>The interface borrows from oscilloscopes and mixing consoles: recessed wells, tabular numbers, and color reserved for live state. Activity is amber. A boundary crossed is red.</p>
         <ul>
@@ -120,14 +170,14 @@
         </ul>
       </div>
       <figure>
-        <div class="screen-frame"><img src="/assets/chat.png" alt="Agent_b desktop interface showing a coding-agent conversation and composer" width="1250" height="975"></div>
+        <div class="screen-frame"><img src="/assets/chat.png" alt="Agent_b desktop interface showing a coding-agent conversation and composer" width="1250" height="975" decoding="async"></div>
         <figcaption><span>Agent_b / desktop</span><span>actual application capture</span></figcaption>
       </figure>
     </section>
 
     <section class="boundary" id="boundary" aria-labelledby="boundary-title">
       <div class="section-heading">
-        <span class="section-index">03 / boundary</span>
+        <span class="section-index">04 / boundary</span>
         <h2 id="boundary-title">Authority is a visible decision.</h2>
       </div>
       <div class="boundary-grid">

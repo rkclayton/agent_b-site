@@ -17,4 +17,10 @@ Open `http://localhost:4173`. There is no install or build step.
 - Build output directory: `public`
 - Custom domain: `agentb.app`
 
-Cloudflare Pages deploys every push to `main`; pull requests receive preview deployments.
+The existing Pages project is `agentb-app`. Deploy production after verification:
+
+```powershell
+npx wrangler pages deploy public --project-name agentb-app --branch main
+```
+
+The project already owns the `agentb.app` custom domain.

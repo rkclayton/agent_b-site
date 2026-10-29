@@ -20,7 +20,7 @@ This repository is the public, forward-facing website for Agent_b. Production is
 
 ## Delivery
 
-- `main` is the Cloudflare Pages production branch; pull requests should receive preview deployments. This buildless site publishes `public/` with no build command.
+- `main` is production source. Deploy this buildless site to the existing Cloudflare Pages project `agentb-app` with `npx wrangler pages deploy public --project-name agentb-app --branch main`; branch deployments may be used for previews.
 - Keep build configuration reproducible from a clean checkout. When a framework is added, record the exact install, test, build, and output-directory commands in `README.md` and keep the lockfile committed.
 - Associate `agentb.app` through the Pages custom-domain settings; do not hand-edit an apex DNS workaround.
 - Before handoff, run the documented checks and build, inspect the site at mobile and desktop widths, and verify navigation plus the latest-download link.
